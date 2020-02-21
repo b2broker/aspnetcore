@@ -1,19 +1,19 @@
-JavaScript and TypeScript clients for SignalR for ASP.NET Core and Azure SignalR Service
+JavaScript and TypeScript clients for SignalR for ASP.NET Core and Azure SignalR Service (forked from [`@microsoft/signalr`](https://www.npmjs.com/package/@microsoft/signalr))
 
 ## Installation
 
 ```bash
-npm install @microsoft/signalr
+npm install @b2broker/signalr
 # or
-yarn add @microsoft/signalr
+yarn add @b2broker/signalr
 ```
 
 To try previews of the next version, use the `next` tag on NPM:
 
 ```bash
-npm install @microsoft/signalr@next
+npm install @b2broker/signalr@next
 # or
-yarn add @microsoft/signalr@next
+yarn add @b2broker/signalr@next
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ To use the client in a webworker, copy `*.js` files from the `dist/webworker` fo
 
 ### Node.js
 
-To use the client in a NodeJS application, install the package to your `node_modules` folder and use `require('@microsoft/signalr')` to load the module. The object returned by `require('@microsoft/signalr')` has the same members as the global `signalR` object (when used in a browser).
+To use the client in a NodeJS application, install the package to your `node_modules` folder and use `require('@b2broker/signalr')` to load the module. The object returned by `require('@b2broker/signalr')` has the same members as the global `signalR` object (when used in a browser).
 
 ### Example (Browser)
 
@@ -71,7 +71,7 @@ connection.start()
 ### Example (NodeJS)
 
 ```JavaScript
-const signalR = require("@microsoft/signalr");
+const signalR = require("@b2broker/signalr");
 
 const headers = { "X-API-KEY": "SECRET", "X-SIGNATURE": "SIGNATURE" };
 
